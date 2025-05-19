@@ -1,4 +1,4 @@
- # CRISP-DM projet Tesla
+ # 📊CRISP-DM du Projet: Préduction de prix des actions de Tesla 
  
  ## 1. Compréhension du métier
  L’objectif principal est de prédire le prix des actions de Tesla à partir de données boursières historiques. Cette prédiction peut aider les
@@ -20,7 +20,9 @@
  4 types de modèles ont été expérimentés :
  ARIMA,SARIMA :
  SARIMAX : Modèle classique de séries temporelles avec données exogènes. Il donne de bons résultats sur les tendances générales.
+ 
  Prophet : Modèle de Facebook performant pour détecter les tendances et saisonnalités. Il a donné les meilleurs scores de précision.
+ 
  LSTM (Long Short-Term Memory) : Réseau de neurones récurrent, utile pour capturer les dépendances temporelles non linéaires. Le
  modèle LSTM n’a pas été concluant dans cette version à cause d’un faible score R².
  
