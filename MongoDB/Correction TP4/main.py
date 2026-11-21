@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse
 from pymongo import MongoClient
@@ -5,7 +6,7 @@ import uvicorn
 
 app = FastAPI(title="Movies API", description="API pour MongoDB Mflix", version="1.0")
 
-MONGODB_URL = "mongodb+srv://hadycoul:8TLd9gSHlT17bzpc@cluster0.hulxfud.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_URL = os.environ["MONGODB_URL"]
 client = MongoClient(MONGODB_URL)
 db = client["sample_mflix"]
 collection = db["movies"]

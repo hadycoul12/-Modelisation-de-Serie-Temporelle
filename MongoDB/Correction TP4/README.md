@@ -22,3 +22,15 @@ python chatbot.py
 
 - http://localhost:4000
 - http://localhost:4000/docs
+
+## Configuration
+
+L'URL de connexion MongoDB Atlas n'est jamais écrite dans le code : définissez-la dans votre environnement avant de lancer l'API.
+
+```bash
+# macOS ou Linux
+export MONGODB_URL="mongodb+srv://<utilisateur>:<mot_de_passe>@<cluster>.mongodb.net/?retryWrites=true&w=majority"
+
+# Windows (PowerShell)
+$env:MONGODB_URL = "mongodb+srv://<utilisateur>:<mot_de_passe>@<cluster>.mongodb.net/?retryWrites=true&w=majority"
+```
